@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/fe72e1556a.js" crossorigin="anonymous"></script>  
-    <title>To do list</title>
-    <link rel="stylesheet" type="text/css" href="todo.css">
-</head>
-<body>
-  <div id="container">
-    <header>
-        <div id="add-task">
-            <input id="input-task" class="add-task" onkeyup="typing()" placeholder="Enter your task" data-helloworld="asdasd"/>
-            <button id="add-button" class="add-btn">ADD </button>
-            
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List In JavaScript</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header">
+          <h2>Hi Code Explained!</h2>
         </div>
-        <div id="header-bottom">
-            <p id="complete-all" class="highlight"><i class="fa-solid fa-check-double"></i>Complete All Tasks</p>
-            <p id="clear-complete" class="highlight">Clear completed</p>
+        <div class="new-todo">
+          <form id="todoform">
+            <input type="text" name="newtodo" id="newtodo" placeholder="I will do ..." />
+            <button type="submit">
+              <i class="bi bi-plus-circle-fill"></i>
+            </button>
+          </form>
         </div>
-    </header>
-    <main>
-        <ul id="task-list"> 
-        </ul>
-    </main>
-    <footer>
-        <span id="total-tasks" style="word-spacing:0;"> <span id="task-counter">0</span>&nbsp;Tasks Left</span>
-        <div>
-            <p id="all" style="color: black;">All</p>
-            <p id="uncompleted">Uncompleted</p>
-            <p id="completed">Completed</p>
-        </div>
-</div>
-<script src="todo.js"></script>
-</body>
+      </header>
+      <div id="todos-list">
+        <!-- <div class="todo" id="0">
+          <i class="bi bi-circle"></i>
+          <i class="bi bi-check-circle-fill"></i>
+          <p class="">Go get milk.</p>
+          <i class="bi bi-pencil-square"></i>
+          <i class="bi bi-trash"></i>
+        </div> -->
+      </div>
+      <div class="notification"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
